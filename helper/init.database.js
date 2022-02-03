@@ -4,7 +4,6 @@ const User = require("../models/user.model");
 require("dotenv").config({ path: `${__dirname}/../config.env` });
 
 const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, "utf-8"));
-console.log(users);
 
 mongoose
   .connect(process.env.DATABASE_URI, {
