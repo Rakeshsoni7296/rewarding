@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BooksApp | <%= dir_name %></title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/<%= css %>.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <ul>
+          <li id="logo">BooksApp</li>
+        </ul>
+        <ul class="site--navbar">
+          <li><a href="/api/v1">Home</a></li>
+          <li><a href="/api/v1/users">Users</a></li>
+        </ul>
+      </nav>
+      <h2><%= summit %></h2>
+      <section class="error-success-log">
+        <div></div>
+        <div class="<%= checkSum.status %> message">
+          <span id="message-log"><%= checkSum.message %></span>
+          <img src="/api/v1/icons/cross-white.svg" alt="close">
+        </div>
+      </section>
+    </header>

@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  color: #222;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+a:hover {
+  color: #ea4335;
+  text-decoration: underline;
+}
+
+body {
+  background: #ffebeb;
+  height: 100vh;
+  position: relative;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background: #ffe5cc;
+}
+#logo {
+  cursor: default;
+  font-size: 20px;
+  font-weight: 700;
+}
+.site--navbar {
+  display: flex;
+}
+.site--navbar li:first-child {
+  margin-right: 28px;
+}
+h2 {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.error-success-log {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message {
+  text-align: end;
+  display: flex;
+  align-items: center;
+
+  padding: 8px 30px;
+  border-radius: 4px 0 0 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.success {
+  background: green;
+}
+
+.error {
+  background: #ea4335;
+}
+
+.message span {
+  color: #fff;
+  margin-right: 18px;
+}
+
+.message img {
+  cursor: pointer;
+}
+
+footer p {
+  padding: 10px 50px;
+  text-align: center;
+  background: #ffe5cc;
+}
+footer a {
+  text-decoration: underline;
+  color: #ea4335;
+}
+
+/* Javascript classes */
+.overlay {
+  opacity: 0;
+}
+
+.hidden {
+  display: none;
+}

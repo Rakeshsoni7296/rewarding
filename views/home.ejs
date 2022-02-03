@@ -1,0 +1,16 @@
+<%- include('base/header', {dir_name: 'Home', css: 'home', summit: 'Hello, Admin!', checkSum}); %>
+<!-- Form to send data -->
+<form class="get-data" action="/api/v1" method="POST">
+  <div class="input-box">
+    <label for="userid">Enter Userid:</label>
+    <input
+      id="userid"
+      type="text"
+      name="userid"
+      placeholder="e.g. 61fa775464df391d1a6a510e"
+    />
+  </div>
+  <div class="submit-btn"><button type="submit"> Submit</button></div>
+</form>
+
+<%- include('base/footer', {postReq: 'postReq.js'}); %>

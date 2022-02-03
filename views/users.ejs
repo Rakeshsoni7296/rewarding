@@ -1,0 +1,43 @@
+<%- include('base/header', {dir_name: 'Users', css: 'user', summit: 'All Users', checkSum: {message: '', status: ''}}); %>
+<!-- Form to send data -->
+<section class="user--details">
+  <div class="card-wrapper">
+    <% users.forEach((user, num) => { %>
+    <div class="card">
+      <div class="card-fields user--num">
+        <%= num + 1 %>
+      </div>
+      <div class="card-fields">
+        <span>Userid:</span><span><%= user._id %></span>
+      </div>
+      <div class="card-fields">
+        <span>Username:</span><span><%= user.name %></span>
+      </div>
+      <div class="card-fields">
+        <span>Email:</span><span><%= user.email %></span>
+      </div>
+      <div class="card-fields">
+        <span>Referred User:</span><span>
+          <% if(user.referredUser) { %>
+          <%= user.referredUser %>
+          <% } else { %>
+          <em>NULL</em>
+          <% } %>
+        </span>
+      </div>
+      <div class="card-fields">
+        <span>Payment Status:</span>
+        <span>
+          <% if(user.isPaymentMade) { %> Transactions Done. <% } else { %> No
+          Transactions yet <% } %>
+        </span>
+      </div>
+      <div class="card-fields">
+        <span>Total Earnings:</span><span> <%= user.totalEarnings %> </span>
+      </div>
+    </div>
+    <% }) %>
+  </div>
+</section>
+
+<%- include('base/footer', {postReq: ''}); %>

@@ -1,0 +1,39 @@
+/* Cards Stylings */
+.user--details {
+  margin: 10px 50px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  padding: 20px 24px;
+  width: 340px;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+}
+
+.card-fields {
+  margin: 5px 0;
+}
+
+.card-fields > span:first-child {
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.user--num {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  background: #ea4335;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 16px;
+}

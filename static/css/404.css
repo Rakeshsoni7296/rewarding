@@ -1,0 +1,28 @@
+.measure--class {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.not--found {
+  display: flex;
+  align-items: center;
+}
+
+.not--found img {
+  width: 30px;
+  margin-right: 16px;
+}
+
+.not--found span {
+  color: #ea4335;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
