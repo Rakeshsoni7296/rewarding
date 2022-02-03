@@ -31,6 +31,10 @@ app.use(express.urlencoded({ extended: false }));
 // Route Handling
 app.use("/api/v1", apiRoutes);
 
+app.get("/", (req, res) => {
+  res.redirect("/api/v1");
+});
+
 app.all("*", (req, res) => {
   res.render("404");
 });
