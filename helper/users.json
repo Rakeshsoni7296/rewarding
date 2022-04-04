@@ -7,13 +7,6 @@
     "totalEarnings": 50
   },
   {
-    "name": "pritisha",
-    "email": "pritisha@gmail.com",
-    "referredUser": "rakesh",
-    "isPaymentMade": true,
-    "totalEarnings": 20
-  },
-  {
     "name": "rahul",
     "email": "rahul@gmail.com",
     "referredUser": "pritisha",
@@ -21,8 +14,8 @@
     "totalEarnings": 0
   },
   {
-    "name": "abhilasha",
-    "email": "abhilasha@gmail.com",
+    "name": "manisha",
+    "email": "manisha@gmail.com",
     "referredUser": "rahul",
     "isPaymentMade": false,
     "totalEarnings": 0
@@ -63,9 +56,16 @@
     "totalEarnings": 0
   },
   {
-    "name": "himanshi",
-    "email": "himanshi@gmail.com",
+    "name": "pritisha",
+    "email": "pritisha@gmail.com",
     "referredUser": "rakesh",
+    "isPaymentMade": true,
+    "totalEarnings": 20
+  },
+  {
+    "name": "srinidhi",
+    "email": "srinidhi@gmail.com",
+    "referredUser": "pritisha",
     "isPaymentMade": false,
     "totalEarnings": 0
   }
